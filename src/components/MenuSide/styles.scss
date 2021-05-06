@@ -1,6 +1,138 @@
 .menu-bar {
   grid-area: menu-bar;
-  width: 250px;
-  height: 100vh;
-  background-color: red;
+  width: 240px;
+  height: 85vh;
+  background-color: var(--menu-side-bg);
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto;
+    svg {
+      width: 130px;
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.btn-menu-container {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  .btn-menu {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: transparent;
+
+    svg {
+      font-size: 24px;
+      margin-left: 20px;
+      color: #ffffff;
+      &.plus, &.heart {
+        margin: 0;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      margin-left: 15px;
+      margin-top: 2px;
+      color: var(--font-color);
+      transition: color .3s;
+    }
+
+    &:hover, &.active {
+      span {
+        color: #ffffff;
+      }
+    }
+    
+    &.active {
+      background-color: var(--btn-gray-active);
+    }
+
+    .box {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      padding: 2px;
+
+      &.new {
+        background-color: #b2b2b2;
+        svg {
+          font-size: 16px;
+          path {
+            fill: #000000;
+          }
+        }
+      }
+
+      &.liked {
+        background: linear-gradient(to right, #340eaa , #ffffff);
+        svg {
+          font-size: 14px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-menu-playlist {
+  position: relative;
+  margin-top: 25px;
+
+  &::after {
+    content: '';
+    height: 0.5px;
+    width: 85%;
+    background-color: #282828;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+  } 
+}
+
+.playlists {
+  .playlists-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    height: 160px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    a {
+      text-decoration: none;
+      color: var(--font-color);
+      margin-left: 18px;
+      padding: 6px 0 10px 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+  }
+  
+  .download-app {
+    display: flex;
+    padding: 10px 0;
+    border: 0;
+    margin-left: 15px;
+    background: red;
+  }
 }
