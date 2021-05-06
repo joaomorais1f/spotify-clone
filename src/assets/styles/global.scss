@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-active: #282828;
+  --menu-side-bg: #000000;
+  --top-linear-gradient: #5c2a27;
+  --bottom-linear-gradient: #121212;
+  --btn-bg: #392d2d;
+  --btn-bg-hover: #604b4a;
+  --btn-play-bg: #1db954;
+  --icons-bg-active: #1ab93b;
+  --user-avatar-none-bg: #333333;
+  --font-color: #a5a5a5;
+}
+
+body, input, textarea, button {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, b{
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+}
