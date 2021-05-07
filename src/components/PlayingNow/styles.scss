@@ -1,3 +1,22 @@
 .playing-now {
   grid-area: playing-now;
+  display: flex;
+  justify-content: space-between;
+  background-color: #181818;
+
+
+  .song-details {
+    display: flex;
+
+    .artist-details {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+  .songs-actions {
+    display: flex;
+    flex-direction: column;
+  }
 }

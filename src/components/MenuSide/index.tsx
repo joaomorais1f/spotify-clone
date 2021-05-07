@@ -53,21 +53,30 @@ export function MenuSide() {
             </span>
           </button>
         </section>
+        <div className="playlists-container">
+          <section className="playlists">
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+            <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
+          </section>
+          <button type="button" className="download-app">
+            <HiDownload />
+            <span>
+              Instalar aplicativo
+            </span>
+          </button>
+        </div>
       </section>
-      <div className="playlists">
-        <section className="playlists-container">
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-          <a href="/" > Nome da playlist asdjhaskhd asdhjkashjkd sdhjkas kd </a>
-        </section>
-        <button type="button" className="download-app">
-          <HiDownload />
-          Instalar aplicativo
-        </button>
-      </div>
     </aside>
   )
 }
