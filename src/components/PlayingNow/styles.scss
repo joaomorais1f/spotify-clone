@@ -1,22 +1,124 @@
 .playing-now {
   grid-area: playing-now;
   display: flex;
+  padding: 12px 0;
   justify-content: space-between;
   background-color: #181818;
 
 
   .song-details {
     display: flex;
+    img {
+      margin-left: 20px;
+    }
 
     .artist-details {
+      position: relative;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      padding: 12px;
+
+      span {
+        color: var(--font-color);
+        font-weight: normal;
+      }
+
+      span:first-child {
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      span + span {
+        font-size: 14px;
+      }
+
+      .song-like {
+        font-size: 0;
+        width: 50px;
+        position: absolute;
+        right: -50px;
+        background: none;
+        border: 0;
+
+        svg {
+          font-size: 20px;
+          &.not-liked {
+            color: #ffffff;
+          }
+
+          &.liked {
+            color: var(--btn-play-bg);
+          }
+        }
+      }
     }
   }
 
-
-  .songs-actions {
+  .song-actions {
     display: flex;
     flex-direction: column;
+    width: 550px;
+    border: 1px solid red;
+
+    .buttons-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center;
+      width: 40%;
+
+      button {
+        position: relative;
+        background: none;
+        border: none;
+
+        svg {
+          font-size: 22px;
+          color: #ffffff;
+        }
+
+        &.random-song::after {
+          content: "";
+          position: absolute;
+          display: none;
+          bottom: 0;
+          left: 8px;
+          width: 4px;
+          height: 4px;
+          border-radius: 2px;
+          background-color: var(--btn-play-bg);
+        }
+
+        &.random-song.active {
+          svg {
+            color: var(--btn-play-bg);
+          }
+        }
+
+        &.random-song.active::after {
+          display: block;
+        }
+
+        &.play {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          background-color: #ffffff;
+
+          svg {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .slider-container {
+      display: flex;
+
+    }
   }
 }

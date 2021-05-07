@@ -1,7 +1,6 @@
 .menu-bar {
   grid-area: menu-bar;
   width: 240px;
-  // height: 90vh;
   background-color: var(--menu-side-bg);
 
   .logo {
@@ -111,9 +110,7 @@
 .playlists-container {
   display: flex;
   flex-direction: column;
-  height: 249px;
-  // max-height: 100%;
-  // background-color: red;
+  height: min(300px, calc(100vh - 65vh));
 
   .playlists {
     display: flex;
