@@ -4,7 +4,10 @@ import { IoRepeat } from 'react-icons/io5';
 import { IoIosShuffle } from 'react-icons/io';
 import { BiSkipNext, BiSkipPrevious } from 'react-icons/bi';
 import { BsPlayFill, BsPauseFill } from 'react-icons/bs';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart, AiOutlineHeart, AiOutlineDesktop } from 'react-icons/ai';
+import { GiMicrophone } from 'react-icons/gi';
+import { RiPlayList2Fill } from 'react-icons/ri';
+import { FiVolume1 } from 'react-icons/fi';
 
 import './styles.scss';
 
@@ -78,17 +81,20 @@ export function PlayingNow () {
       </section>
       <section className="device-actions">
         <button type="button">
-          <BiSkipNext />
+          <GiMicrophone />
         </button>
         <button type="button">
-          <BiSkipNext />
+          <RiPlayList2Fill />
         </button>
         <button type="button">
-          <BiSkipNext />
+          <AiOutlineDesktop />
         </button>
+      <div className="volume">
         <button type="button">
-          <BiSkipNext />
+          <FiVolume1 />
         </button>
+        <div className="volume-progress" />
+      </div>
       </section>
     </footer>
   )
