@@ -4,7 +4,7 @@ import './styles.scss';
 
 export function Card() {
   return (
-    <button type="button" className="card-container">
+    <div className="card-container">
       <img src="https://www.github.com/joaomorais.png" alt="Foto da Playlist" />
       <div className="content">
         <span> Nome da playlist que foi tocada asdassd\ </span>
@@ -12,6 +12,6 @@ export function Card() {
       <button type="button" className="play-playlist active">
         <BsPlayFill />
       </button>
-    </button>
+    </div>
   )
 }
